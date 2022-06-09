@@ -1,0 +1,66 @@
+.about {
+    margin-bottom: 7em;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+}
+
+.about p {
+    font-family: var(--font-sans);
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 2em;
+}
+
+.about-image {
+    height: 400px;
+    width: 100%;
+
+    background: no-repeat center
+        url(https://images.unsplash.com/photo-1442544213729-6a15f1611937?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+}
+
+.biodata {
+    padding: 1em;
+    height: 100%;
+    width: 50%;
+
+    font-family: var(--font-sans);
+    color: #333;
+    font-size: 1rem;
+
+    background: white;
+    transform: rotate(5deg);
+    box-shadow: -10px 10px 10px 0 #999;
+}
+
+.biodata:hover {
+    transform: translate(10px, -10px);
+    box-shadow: -10px 10px 10px 0 #999;
+
+    transition: all 0.5s ease-out;
+}
+
+.biodata-img {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.biodata-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 900px) {
+    .about {
+        grid-template-columns: 3fr 1fr;
+        gap: 4em;
+    }
+
+    .biodata {
+        width: 100%;
+    }
+}
